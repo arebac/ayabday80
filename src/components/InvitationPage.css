@@ -1,25 +1,45 @@
+
+.entireScreen{
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.containerANDheader{
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/image-removebg-preview (1).png");
+  background-size: 24%;
+  background-position: top 35% right 35%;
+  background-repeat: no-repeat; /* Prevents tiling */
+
+}
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 80vh;
-  background-color: ivory;
-
-  width: 50%;
-
+  min-height: 100vh;
   margin-top: 3%;
+  width: 100%;
 
-  background-image: url("/image-removebg-preview (1).png");
-  background-size: auto; /* Keeps the image at its original size */
-  background-position: top left; /* Moves the image to the top-left */
-  background-repeat: no-repeat; /* Prevents tiling */
-  background-size: 45%;
 }
 
 .header {
-  width: 95%;
-  margin-left: 25%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-right: 20%;
+
 }
 
 .header h1 {
@@ -60,10 +80,10 @@
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   /* margin-top: 20px; */
-  width: 50%;
+  width: 40%;
 }
 .input {
-  width: 100%;
+  width: 70%;
   padding: 12px;
   border: 2px solid rgba(255, 215, 0, 0.6); /* Golden border */
   background: rgba(255, 255, 255, 0.1); /* Light transparency */
@@ -101,58 +121,3 @@
 }
 
 
-/* 🌍 Mobile Optimization (For screens up to 768px width) */
-@media (max-width: 768px) {
-  .container {
-    width: 90%; /* Make container take more space */
-    min-height: 100vh; /* Ensure full screen height */
-    background-size: 60%; /* Resize background image */
-    background-position: center top; /* Center the background image */
-  }
-
-  .header {
-    width: 100%;
-    text-align: center; /* Center the text */
-    margin-left: 0; /* Remove left margin */
-  }
-
-  .header h1 {
-    font-size: 2.5rem; /* Adjust title size for readability */
-  }
-
-  .header p {
-    font-size: 1.2rem;
-    width: 85%;
-    margin: 0 auto; /* Center the text */
-    line-height: 1.5; /* Add spacing between lines */
-  }
-
-  .card {
-    width: 90%; /* Make form wider */
-    padding: 20px; /* Reduce padding for smaller screens */
-  }
-
-  .input {
-    width: 100%; /* Ensure inputs take full width */
-    font-size: 1rem; /* Maintain readability */
-    border: 2px solid rgba(218, 165, 32, 0.5); /* Softer golden border */
-    background: rgba(255, 255, 255, 0.3); /* Light transparent background */
-  }
-
-  .button {
-    width: 100%; /* Make button full width */
-    font-size: 1rem; /* Ensure text is readable */
-  }
-}
-
-/* 🖥️ Larger Tablets & Small Laptops (768px - 1024px) */
-@media (max-width: 1024px) {
-  .container {
-    width: 80%;
-    background-size: 50%;
-  }
-
-  .card {
-    width: 70%;
-  }
-}

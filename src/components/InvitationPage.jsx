@@ -39,6 +39,8 @@ export default function InvitationPage() {
   };
 
   return (
+    <div className="entireScreen">
+    <div className="containerANDheader">
     <div className="container">
       <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} className="header">
         <h1>Cumpleaños de Tata</h1>
@@ -50,6 +52,9 @@ export default function InvitationPage() {
         <p>Lleguen temprano</p>
         <p>Confirmen asistencia con total de personas</p></div>
         </motion.div>
+        
+      </div>
+      </div>
 
       <form className="card" onSubmit={handleSubmit}>
         <input
