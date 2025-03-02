@@ -99,3 +99,54 @@
   background-color: #daa520;
   transform: scale(1.05); /* Slight pop effect */
 }
+
+/* 🌍 Mobile Screens (Up to 768px width) */
+@media (max-width: 768px) {
+  .container {
+    width: 90%; /* Make it take more space on small screens */
+    background-size: 70%; /* Adjust image size */
+    min-height: 100vh; /* Ensure it fills screen height */
+  }
+
+  .header {
+    width: 100%;
+    margin-left: 0; /* Remove extra left margin */
+    text-align: center; /* Center text */
+  }
+
+  .header h1 {
+    font-size: 2.2rem; /* Slightly smaller for mobile */
+  }
+
+  .header p {
+    font-size: 1.2rem; /* Adjust paragraph size */
+    width: 90%;
+    margin: 0 auto; /* Center paragraphs */
+  }
+
+  .card {
+    width: 90%; /* Form takes more space */
+    padding: 20px; /* Reduce padding on smaller screens */
+  }
+
+  .input {
+    font-size: 1rem; /* Keep input text readable */
+  }
+
+  .button {
+    width: 100%; /* Make button full width on mobile */
+    font-size: 1rem;
+  }
+}
+
+/* 🖥️ Larger Tablets & Small Laptops (768px - 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    width: 80%;
+    background-size: 50%;
+  }
+
+  .card {
+    width: 70%;
+  }
+}
