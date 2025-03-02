@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import "../components/invitationPage.css";
-//changed file name
+import "../components/InvitationPage.css";
+
 
 export default function InvitationPage() {
   const [name, setName] = useState("");
