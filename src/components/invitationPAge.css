@@ -1,0 +1,101 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  background-color: ivory;
+
+  width: 50%;
+
+  margin-top: 3%;
+
+  background-image: url("/image-removebg-preview (1).png");
+  background-size: auto; /* Keeps the image at its original size */
+  background-position: top left; /* Moves the image to the top-left */
+  background-repeat: no-repeat; /* Prevents tiling */
+  background-size: 45%;
+}
+
+.header {
+  width: 95%;
+  margin-left: 25%;
+}
+
+.header h1 {
+  font-size: 2.8rem; /* Increase the title size */
+  font-weight: 1200; /* Make it bolder */
+  color: black; /* Darker red for contrast */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Softer shadow */
+  margin: 0;
+  text-align: center;
+  font-family: "Great Vibes", cursive;
+}
+
+.centerp {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+.header p {
+  font-family: "Great Vibes", cursive;
+  font-size: 1.4rem; /* Slightly larger */
+  font-weight: 1000; /* Medium weight for better readability */
+  color: black; /* Darken the color */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+  width: 95%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* margin-top: 20px; */
+  width: 50%;
+}
+.input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid rgba(255, 215, 0, 0.6); /* Golden border */
+  background: rgba(255, 255, 255, 0.1); /* Light transparency */
+  color: #000000; /* White text */
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 🟡 Make input stand out on hover & focus */
+.input:focus {
+  border-color: goldenrod; /* Matches the text color */
+  background: rgba(255, 255, 255, 0.2); /* Slightly brighter */
+  box-shadow: 0 0 10px rgba(218, 165, 32, 0.5); /* Soft glow */
+}
+
+/* 🚀 Button Refinements */
+.button {
+  margin-top: 2%;
+  background-color: goldenrod;
+  color: black;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+/* 🟡 Button Hover Effect */
+.button:hover {
+  background-color: #daa520;
+  transform: scale(1.05); /* Slight pop effect */
+}
