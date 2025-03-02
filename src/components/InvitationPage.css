@@ -103,8 +103,8 @@
 /* 🌍 Mobile Screens (Up to 768px width) */
 @media (max-width: 768px) {
   .container {
-    width: 90%; /* Make it take more space on small screens */
-    background-size: 70%; /* Adjust image size */
+    width: 100%; /* Make it take more space on small screens */
+    background-size: 60%; /* Adjust image size */
     min-height: 100vh; /* Ensure it fills screen height */
   }
 
@@ -125,7 +125,7 @@
   }
 
   .card {
-    width: 90%; /* Form takes more space */
+    width: 100%; /* Form takes more space */
     padding: 20px; /* Reduce padding on smaller screens */
   }
 
