@@ -121,3 +121,22 @@
 }
 
 
+@media (max-width: 768px) {
+  .containerANDheader {
+    background-size: 40%; /* Make the image smaller on mobile */
+    background-position: top center; /* Center it for better appearance */
+  }
+
+  .header {
+    margin-right: 0; /* Remove right margin on mobile */
+    text-align: center;
+  }
+
+  .card {
+    width: 80%; /* Make form wider for small screens */
+  }
+
+  .input {
+    width: 100%; /* Ensure inputs are full width */
+  }
+}
