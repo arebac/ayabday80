@@ -76,7 +76,7 @@ export default function InvitationPage() {
           min="1"
           required
         />
-        <button type="submit" className="button">Confirm Attendance</button>
+        <button type="submit" className="button">Confirmar Asistencia</button>
       </form>
     </div>
   );
