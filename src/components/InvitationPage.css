@@ -1,23 +1,23 @@
 .entireScreen {
   width: 100%;
-  height: 80vh;
+  height: 95%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 1%;
+
 }
 
 .containerANDheader {
-  width: 100%;
-  height: 80vh;
+  width: 90%;
+  height: 70%;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
   background-image: url("/image-removebg-preview (1).png");
-  background-size: 24%;
-  background-position: top 60% right 70%;
+  background-size: 20%;
+  background-position: top 45% right 80%;
   background-repeat: no-repeat; /* Prevents tiling */
   margin: 0;
 }
@@ -27,16 +27,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 60vh;
-  width: 100%;
+
 }
 
-.header {
-  width: 100%;
-  margin-left: 30%;
-}
+
 
 .header h1 {
+
   font-size: 5rem; /* Increase the title size */
   font-weight: 700; /* Make it bolder */
   color: black; /* Darker red for contrast */
@@ -52,7 +49,7 @@
   justify-content: center;
   width: 100%;
   text-align: center;
-  margin: 0;
+
 }
 
 .header p {
@@ -61,7 +58,7 @@
   font-weight: 1000; /* Medium weight for better readability */
   color: black; /* Darken the color */
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-  width: 95%;
+  width: 100%;
   margin: 0;
 }
 
@@ -118,9 +115,9 @@
 @media (max-width: 768px) {
   .containerANDheader {
     background-image: url("/image-removebg-preview (1).png");
-    background-size: 20%;
+    background-size: 80%;
     background-position: top left;
-    background-repeat: no-repeat;
+
   }
 
   .header {
@@ -128,16 +125,16 @@
   }
 
   .card {
-    width: 75%; /* Ajusta el tamaño */
+    width: 70%; /* Ajusta el tamaño */
     max-width: 400px; /* Evita que se expanda demasiado */
     margin-top: -5%; /* Reduce la separación */
   }
 
   .input {
-    width: 90%; /* Make inputs full width */
+    width: 70%; /* Make inputs full width */
   }
 
   .button {
-    width: 90%;
+    width: 70%;
   }
 }
