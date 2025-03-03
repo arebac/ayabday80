@@ -122,23 +122,38 @@
 
 
 @media (max-width: 768px) {
+
   .containerANDheader {
-    background-size: 40%; /* Make the image smaller on mobile */
-    background-position: top 75% right 25%;
+    flex-direction: column; /* Stack elements */
+    background-size: 35%; /* Adjust size */
+    background-position: top center; /* Better placement */
   }
 
   .header {
-    margin-right: 0; /* Remove right margin on mobile */
+    width: 100%;
     text-align: center;
-    font-size: 3rem;
+    margin: 0;
+  }
+
+  .header h1 {
+    font-size: 2.5rem; /* Keep title readable */
+  }
+
+  .header p {
+    font-size: 1.2rem;
   }
 
   .card {
-    width: 80%; /* Make form wider for small screens */
-    margin-top:-10%;
+    width: 90%;
+    padding: 15px;
   }
 
   .input {
-    width: 100%; /* Ensure inputs are full width */
+    width: 100%; /* Make inputs full width */
   }
+
+  .button {
+    width: 100%;
+  }
+
 }
