@@ -60,7 +60,7 @@ export default function InvitationPage() {
         <input
           type="text"
           name="name"
-          placeholder="Enter your name"
+          placeholder="Nombre Completo"
           value={name}
           onChange={(e) => setName(e.target.value)}
           className="input"
@@ -69,7 +69,7 @@ export default function InvitationPage() {
         <input
           type="number"
           name="count"
-          placeholder="Number of people"
+          placeholder="Número de personas"
           value={count}
           onChange={(e) => setCount(e.target.value)}
           className="input"
