@@ -116,8 +116,9 @@
   .containerANDheader {
     background-image: url("/image-removebg-preview (1).png");
     background-size: 80%;
-    background-position: top left;
+    background-position: top 73% left -7%;
     height: 100%;
+    
 
 
   }

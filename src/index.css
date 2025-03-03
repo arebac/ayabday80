@@ -17,10 +17,8 @@ body{
 
 
 #root{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    height:100vh;
+
+    height:97vh;
     width: 100%;
 }
 
