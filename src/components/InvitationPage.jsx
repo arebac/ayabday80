@@ -47,7 +47,7 @@ export default function InvitationPage() {
         <div className="centerp">
         <p>Sábado, 26 de abril de 2025</p>
         <p>10:00 am</p>
-        <p>Bo. Ortiga, Orocovis</p>
+        <p>Bo. Ortiga,<br/>Orocovis</p>
         <p>No regalos</p>
         <p>Lleguen temprano</p>
         <p>Confirmen asistencia con total de personas</p></div>
