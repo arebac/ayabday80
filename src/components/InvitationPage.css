@@ -57,7 +57,7 @@
   font-size: 1.7rem; /* Slightly larger */
   font-weight: 1000; /* Medium weight for better readability */
   color: black; /* Darken the color */
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+
   width: 100%;
   margin: 0;
 }
@@ -70,7 +70,7 @@
   background: white;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
   margin-top: 40px;
   width: 40%;
 }
