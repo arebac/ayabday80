@@ -62,7 +62,7 @@ export default function InvitationPage() {
               </a>{" "}
               <p>No regalos</p>
               <p>Lleguen temprano</p>
-              <p>Confirmen asistencia con total de personas</p>
+              <p>Confirmen asistencia</p>
             </div>
           </motion.div>
         </div>
