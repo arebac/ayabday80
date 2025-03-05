@@ -86,6 +86,7 @@
   transition: all 0.3s ease-in-out;
 }
 
+
 /* 🟡 Make input stand out on hover & focus */
 .input:focus {
   border-color: goldenrod; /* Matches the text color */

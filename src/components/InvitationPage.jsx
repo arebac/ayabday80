@@ -2,7 +2,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import "../components/InvitationPage.css";
 
-
 export default function InvitationPage() {
   const [name, setName] = useState("");
   const [count, setCount] = useState("");
@@ -10,7 +9,12 @@ export default function InvitationPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (name.trim() === "" || count.trim() === "" || isNaN(count) || parseInt(count) <= 0) {
+    if (
+      name.trim() === "" ||
+      count.trim() === "" ||
+      isNaN(count) ||
+      parseInt(count) <= 0
+    ) {
       alert("Please enter a valid name and number of attendees.");
       return;
     }
@@ -23,7 +27,7 @@ export default function InvitationPage() {
       const response = await fetch("https://formspree.io/f/xpwqvydb", {
         method: "POST",
         body: formData,
-        headers: { "Accept": "application/json" }
+        headers: { Accept: "application/json" },
       });
 
       if (response.ok) {
@@ -40,20 +44,28 @@ export default function InvitationPage() {
 
   return (
     <div className="entireScreen">
-    <div className="containerANDheader">
-    <div className="container">
-      <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} className="header">
-        <h1>Cumpleaños de Tata</h1>
-        <div className="centerp">
-        <p>Sábado, 26 de abril de 2025</p>
-        <p>10:00 am</p>
-        <a style={{ textDecorationColor: "black" }} href="https://maps.app.goo.gl/axbVA3H98sq2Xevu6"><p>Bo. Ortiga,<br/>Orocovis</p></a>
-        <p>No regalos</p>
-        <p>Lleguen temprano</p>
-        <p>Confirmen asistencia con total de personas</p></div>
-        </motion.div>
-        
-      </div>
+      <div className="containerANDheader">
+        <div className="container">
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="header"
+          >
+            <h1>Cumpleaños de Tata</h1>
+            <div className="centerp">
+              <p>Sábado, 26 de abril de 2025</p>
+              <p>10:00 am</p>
+              <a style={{textDecorationColor:"black"}}
+                href="https://maps.app.goo.gl/axbVA3H98sq2Xevu6"
+              >
+                <p>📍 Bo. Ortiga, <br />Orocovis</p>
+              </a>{" "}
+              <p>No regalos</p>
+              <p>Lleguen temprano</p>
+              <p>Confirmen asistencia con total de personas</p>
+            </div>
+          </motion.div>
+        </div>
       </div>
 
       <form className="card" onSubmit={handleSubmit}>
@@ -76,7 +88,9 @@ export default function InvitationPage() {
           min="1"
           required
         />
-        <button type="submit" className="button">Confirmar Asistencia</button>
+        <button type="submit" className="button">
+          Confirmar Asistencia
+        </button>
       </form>
     </div>
   );
